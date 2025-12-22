@@ -4,7 +4,7 @@ const fragment = document.createDocumentFragment();
 
 for (let i = 0; i < 10000; i++) {
   const li = document.createElement("li");
-  li.textContent = "Item " + i;
+  li.textContent = "Item " + j;
   fragment.appendChild(li);
 }
 
