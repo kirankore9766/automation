@@ -6,3 +6,5 @@ let b = prompt('Enter the second variable: ');
 
 console.log(`The value of a after swapping: ${a}`);
 console.log(`The value of b after swapping: ${b}`);
+console.log(`The value of b after swapping: ${c}`);
+console.log("hello);
