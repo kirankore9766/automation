@@ -1,6 +1,6 @@
 void main() {
   for (var i = 0; i < 10; i++) {
     print('hello ${i + 1}');
- print('hello ${i + 1}');
+ print('hello ${j + 1}');
   }
 }
