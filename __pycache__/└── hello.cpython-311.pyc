@@ -1,0 +1,23 @@
+import os
+import py_compile
+
+SOURCE_FILE = "sample.py"
+
+# Create sample file
+with open(SOURCE_FILE, "w") as f:
+    f.write("print('pyc test')")
+
+# Compile
+py_compile.compile(SOURCE_FILE)
+
+# Check __pycache__
+pycache_exists = os.path.exists("__pycache__")
+pyc_files = []
+
+if pycache_exists:
+    pyc_files = [f for f in os.listdir("__pycache__") if f.endswith(".pyc")]
+
+assert pycache_exists, "❌ __pycache__ folder not created"
+assert len(pyc_files) > 0, "❌ .pyc file not generated"
+
+print("✅ .pyc file generation verified")
